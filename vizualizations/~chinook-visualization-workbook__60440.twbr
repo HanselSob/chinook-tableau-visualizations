@@ -1673,8 +1673,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1cqej840uy6la21cuut920smlfes].[Longitude (generated)]' field-type='quantitative' max='25840118.707729898' min='-14742058.126807299' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1cqej840uy6la21cuut920smlfes].[Latitude (generated)]' field-type='quantitative' max='14158504.147653639' min='-8793467.9773736447' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1cqej840uy6la21cuut920smlfes].[Longitude (generated)]' field-type='quantitative' max='47117860.850512296' min='-1773279.379076994' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1cqej840uy6la21cuut920smlfes].[Latitude (generated)]' field-type='quantitative' max='16193077.263811888' min='-11458176.937893163' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.1cqej840uy6la21cuut920smlfes].[sum:total:qk]' palette='green_10_0' type='interpolated' />
@@ -1690,17 +1690,10 @@
             </view>
             <mark class='Automatic' />
             <encodings>
-              <size column='[federated.1cqej840uy6la21cuut920smlfes].[sum:total:qk]' />
               <lod column='[federated.1cqej840uy6la21cuut920smlfes].[none:country:nk]' />
               <color column='[federated.1cqej840uy6la21cuut920smlfes].[sum:total:qk]' />
+              <geometry column='[federated.1cqej840uy6la21cuut920smlfes].[Geometry (generated)]' />
             </encodings>
-            <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='false' />
-                <format attr='mark-color' value='#59a14f' />
-              </style-rule>
-            </style>
           </pane>
         </panes>
         <rows>[federated.1cqej840uy6la21cuut920smlfes].[Latitude (generated)]</rows>
@@ -2027,7 +2020,7 @@
       </viewpoint>
       <simple-id uuid='{D057B671-E009-4828-B689-81FFABA6A34F}' />
     </window>
-    <window class='worksheet' maximized='true' name='Employee Sales Performance'>
+    <window class='worksheet' name='Employee Sales Performance'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2059,7 +2052,7 @@
       </viewpoint>
       <simple-id uuid='{460E37D8-B47D-4244-AA59-3C9E217CCD64}' />
     </window>
-    <window class='worksheet' name='Sales By Country'>
+    <window class='worksheet' maximized='true' name='Sales By Country'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2081,7 +2074,6 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1cqej840uy6la21cuut920smlfes].[sum:total:qk]' type='size' />
             <card pane-specification-id='0' param='[federated.1cqej840uy6la21cuut920smlfes].[sum:total:qk]' type='color' />
           </strip>
         </edge>
